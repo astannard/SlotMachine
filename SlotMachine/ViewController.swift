@@ -16,9 +16,17 @@ class ViewController: UIViewController {
     var fourthContainer: UIView!
     
     var titleLabel: UILabel!
+    
+    //Information Labels
+    var creditsLabel: UILabel!
 
     let kMarginForView:CGFloat = 10.0
+    let kMarginForSlot:CGFloat = 2.0
     let kSixth:CGFloat = 1.0/6.0
+    let kThird:CGFloat = 1.0/3.0
+
+    let kNumberOfContainers = 3
+    let kNumberOfSlots = 3
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +34,7 @@ class ViewController: UIViewController {
         
         self.setupContainerViews()
         self.setupFirstContainer(self.firstContainer)
+        setupSecondContainer(self.secondContainer)
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,6 +73,17 @@ class ViewController: UIViewController {
         containerView.addSubview(self.titleLabel)
         
     
+    }
+
+    func setupSecondContainer(containerView: UIView){
+        for var containerNumber = 0; containerNumber < kNumberOfContainers; ++containerNumber{
+            for var slotNumber = 0; slotNumber < kNumberOfSlots; ++slotNumber{
+              var slotImageView = UIImageView()
+                slotImageView.backgroundColor = UIColor.yellowColor()
+                slotImageView.frame = CGRect(x: containerView.bounds.origin.x + (containerView.bounds.size.width * CGFloat(containerNumber) * kThird), y: containerView.bounds.origin.y + (containerView.bounds.size.height * CGFloat(slotNumber) * kThird), width: containerView.bounds.width * kThird - kMarginForSlot, height: containerView.bounds.height * kThird - kMarginForSlot)
+                containerView.addSubview(slotImageView)
+            }
+        }
     }
 
 }
