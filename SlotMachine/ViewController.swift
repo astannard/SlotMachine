@@ -110,6 +110,12 @@ class ViewController: UIViewController {
         slots = Factory.createSlots()
         setupSecondContainer(self.secondContainer)
         
+        var winningsMultiplier = SlotBrain.computeWinnigs(slots)
+        winnings = winningsMultiplier * currentBet
+        credits += winnings
+        currentBet = 0
+        updateMainView()
+        
     }
 
     func setupContainerViews()  {

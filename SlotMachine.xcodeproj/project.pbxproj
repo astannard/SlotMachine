@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7AD52D601A6316DD00994175 /* Slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD52D5F1A6316DD00994175 /* Slot.swift */; };
 		7AD52D621A6317FD00994175 /* Factory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD52D611A6317FD00994175 /* Factory.swift */; };
+		7AD52D641A6466E000994175 /* SlotBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD52D631A6466E000994175 /* SlotBrain.swift */; };
 		A1C577821A5A9080009375A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C577811A5A9080009375A9 /* AppDelegate.swift */; };
 		A1C577841A5A9080009375A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C577831A5A9080009375A9 /* ViewController.swift */; };
 		A1C577871A5A9080009375A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1C577851A5A9080009375A9 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 /* Begin PBXFileReference section */
 		7AD52D5F1A6316DD00994175 /* Slot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Slot.swift; sourceTree = "<group>"; };
 		7AD52D611A6317FD00994175 /* Factory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Factory.swift; sourceTree = "<group>"; };
+		7AD52D631A6466E000994175 /* SlotBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlotBrain.swift; sourceTree = "<group>"; };
 		A1C5777C1A5A9080009375A9 /* SlotMachine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlotMachine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C577801A5A9080009375A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C577811A5A9080009375A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				A1C577851A5A9080009375A9 /* Main.storyboard */,
 				A1C577881A5A9080009375A9 /* Images.xcassets */,
 				7AD52D611A6317FD00994175 /* Factory.swift */,
+				7AD52D631A6466E000994175 /* SlotBrain.swift */,
 				A1C5778A1A5A9080009375A9 /* LaunchScreen.xib */,
 				A1C5777F1A5A9080009375A9 /* Supporting Files */,
 				7AD52D5F1A6316DD00994175 /* Slot.swift */,
@@ -222,6 +225,7 @@
 				A1C577841A5A9080009375A9 /* ViewController.swift in Sources */,
 				7AD52D601A6316DD00994175 /* Slot.swift in Sources */,
 				A1C577821A5A9080009375A9 /* AppDelegate.swift in Sources */,
+				7AD52D641A6466E000994175 /* SlotBrain.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
